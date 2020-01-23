@@ -5,6 +5,14 @@
 	/* Sidebar */
 	--sidebar-margin: auto;
 	--sidebar-padding: 10px;
+	
+	/* Footer */
+	--footer-padding: 5px;
+}
+
+html {
+	height: 100%;
+	width: 100%;
 }
 
 body {
@@ -145,4 +153,47 @@ body {
 
 figure img, figcaption {
 	margin: 10px 0;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 1);
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	height: fit-content;
+	width: 100%;
+}
+
+footer div {
+	max-width: 25%;
+}
+
+.footer-top {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+.footer-1st-row {
+	text-align: justify;
+	text-justify: center;
+}
+
+.footer-1st-row .beg {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.beg {
+	color: rgba(255, 255, 255, 1);
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	padding: var(--footer-padding);
+}
+
+.copyrightName {
+	color: rgba(255, 60, 60, 1);
+	font-size: 0.9vw;
+	font-weight: bold;
+	margin: auto;
+	padding: var(--footer-padding);
 }
