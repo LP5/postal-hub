@@ -192,7 +192,7 @@ footer div {
 
 .copyrightName {
 	color: rgba(255, 60, 60, 1);
-	font-size: 0.9vw;
+	font-size: 0.9vh;
 	font-weight: bold;
 	margin: auto;
 	padding: var(--footer-padding);
