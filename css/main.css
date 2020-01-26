@@ -190,6 +190,20 @@ footer div {
 	padding: var(--footer-padding);
 }
 
+.social-media {
+	box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.2);
+	padding: 0.1em;
+	margin: auto;
+	width: 100%;
+}
+
+.footer-2nd-row i {
+	background-color: rgba(255, 0, 0, 0.225);
+	border-radius: 100%;
+	color: red;
+	padding: 0.5rem;
+}
+
 .copyrightName {
 	color: rgba(255, 60, 60, 1);
 	font-size: calc(10px + 0.1vh);
