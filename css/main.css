@@ -1,11 +1,12 @@
 :root {
 	--info-games-list-border: 0.1vh solid #ffffff;
 	--postal-font: 'Special Elite';
-	
+  --postal-font-color: rgb(175, 0, 0);
+
 	/* Sidebar */
 	--sidebar-margin: auto;
 	--sidebar-padding: 10px;
-	
+
 	/* Footer */
 	--footer-padding: 5px;
 }
@@ -32,7 +33,7 @@ body {
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
-	
+
 	color: white;
 	list-style-type: none;
 
@@ -47,7 +48,7 @@ body {
 	justify-content: center;
 
 	color: inherit;
-	font-family: Consolas;
+	font-family: "Roboto Slab", serif;
 	font-weight: bold;
 	margin: 2px;
 	padding: 10px;
@@ -79,6 +80,7 @@ body {
 .info-games {
 	display: grid;
 	grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 5px;
 }
 
 .info-games-list {
@@ -93,9 +95,9 @@ body {
 	width: fit-content;
 }
 
-.info-games-list ul {	
+.info-games-list ul {
 	text-align: center;
-	list-style-type: none;	
+	list-style-type: none;
 	display: inherit;
 	margin: var(--sidebar-margin);
 	padding: var(--sidebar-padding);
@@ -103,7 +105,7 @@ body {
 
 .info-games-list h1 {
 	display: inherit;
-	color: rgb(175, 0, 0);
+	color: var(--postal-font-color);
 	font-family: inherit;
 	font-size: 20px;
 	font-weight: bold;
@@ -114,7 +116,7 @@ body {
 }
 
 .info-games-list a {
-	display: inherit;	
+	display: inherit;
 	color: #ffffff;
 	font-family: inherit;
 	font-weight: bold;
@@ -129,13 +131,15 @@ body {
 }
 
 .info-text {
-	background-color: rgba(0, 0, 0, 1);
+	/* background-color: rgba(0, 0, 0, 1); */
 	color: #ffffff;
-	font-family: Consolas;
+	font-family: "Roboto Slab", serif;
 	font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 	margin: 10px auto;
 	padding: 25px;
-	
+
 	grid-column: col-start 4 / span 6;
 }
 
@@ -151,8 +155,30 @@ body {
 	width: auto;
 }
 
+.gallery {
+  color: red;
+  background-color: rgba(0, 0, 0, 1);
+  grid-column: col-start 10 / span 3;
+  margin: 10px auto;
+  text-align: center;
+  height: fit-content;
+}
+
+.gallery h1 {
+  color: var(--postal-font-color);
+  font-family: var(--postal-font);
+}
+
+.gallery img {
+  margin: auto;
+  height: 100px;
+}
+
 figure img, figcaption {
 	margin: 10px 0;
+  font-family: var(--postal-font);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 footer {
@@ -177,6 +203,10 @@ footer div {
 
 .footer-top .footer-container:nth-child(1) {
 	color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-top .footer-container:nth-child(2) {
+	text-align: center;
 }
 
 .footer-container {
@@ -210,7 +240,8 @@ footer div {
 
 .copyrightName {
 	color: rgba(255, 60, 60, 1);
-	font-size: calc(10px + 0.1vh);
+  font-family: monospace;
+	font-size: calc(10px + 0.2rem);
 	font-weight: bold;
 	margin: auto;
 	padding: var(--footer-padding);
