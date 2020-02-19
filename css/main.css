@@ -1,12 +1,10 @@
 :root {
 	--info-games-list-border: 0.1vh solid #ffffff;
 	--postal-font: 'Special Elite';
-  --postal-font-color: rgb(175, 0, 0);
-
+	--postal-font-color: rgb(175, 0, 0);
 	/* Sidebar */
 	--sidebar-margin: auto;
 	--sidebar-padding: 10px;
-
 	/* Footer */
 	--footer-padding: 5px;
 }
@@ -19,7 +17,6 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-
 	background-color: rgb(84, 23, 23);
 	margin: 0;
 }
@@ -27,16 +24,13 @@ body {
 .nav {
 	height: 6vh;
 	width: 100%;
-
 	background-color: rgba(0, 0, 0, 1);
 	background-image: url(../img/postal-hub-logo.ico);
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
-
 	color: white;
 	list-style-type: none;
-
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-end;
@@ -46,7 +40,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	color: inherit;
 	font-family: "Roboto Slab", serif;
 	font-weight: bold;
@@ -79,11 +72,11 @@ body {
 .info-games {
 	display: grid;
 	grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 10px;
+	grid-gap: 10px;
 }
 
 .info-games-left {
-  grid-column: col-start / span 3;
+	grid-column: col-start / span 3;
 }
 
 .info-games-list {
@@ -92,7 +85,7 @@ body {
 	font-family: var(--postal-font);
 	font-style: bold;
 	margin: 10px auto;
-  padding: var(--sidebar-padding);
+	padding: var(--sidebar-padding);
 	height: fit-content;
 }
 
@@ -113,7 +106,7 @@ body {
 	letter-spacing: 0.1em;
 	text-align: center;
 	margin: 0;
-  padding: var(--sidebar-padding);
+	padding: var(--sidebar-padding);
 }
 
 .info-games-list a {
@@ -124,7 +117,7 @@ body {
 	letter-spacing: 0.1em;
 	text-decoration: none;
 	margin: 0;
-  padding: var(--sidebar-padding);
+	padding: var(--sidebar-padding);
 }
 
 .info-games-list a:hover {
@@ -132,12 +125,12 @@ body {
 }
 
 .gallery {
-  color: red;
-  background-color: rgba(0, 0, 0, 1);
-  margin: 10px auto;
-  padding: var(--sidebar-padding);
-  text-align: center;
-  height: fit-content;
+	color: red;
+	background-color: rgba(0, 0, 0, 1);
+	margin: 10px auto;
+	padding: var(--sidebar-padding);
+	text-align: center;
+	height: fit-content;
 }
 
 .info-text {
@@ -145,15 +138,15 @@ body {
 	color: #ffffff;
 	font-family: "Roboto Slab", serif;
 	font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+	font-weight: bold;
+	letter-spacing: 0.05em;
 	margin: 10px auto;
 	padding: 25px;
-
 	grid-column: col-start 4 / col-end;
 }
 
-.info-text figure, figcaption {
+.info-text figure,
+figcaption {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -166,20 +159,21 @@ body {
 }
 
 .gallery h1 {
-  color: var(--postal-font-color);
-  font-family: var(--postal-font);
+	color: var(--postal-font-color);
+	font-family: var(--postal-font);
 }
 
 .gallery img {
-  margin: auto;
-  height: 100px;
+	margin: auto;
+	height: 100px;
 }
 
-figure img, figcaption {
+figure img,
+figcaption {
 	margin: 10px 0;
-  font-family: var(--postal-font);
-  font-size: 20px;
-  font-weight: bold;
+	font-family: var(--postal-font);
+	font-size: 20px;
+	font-weight: bold;
 }
 
 footer {
@@ -241,7 +235,7 @@ footer div {
 
 .copyrightName {
 	color: rgba(255, 60, 60, 1);
-  font-family: monospace;
+	font-family: monospace;
 	font-size: calc(10px + 0.2rem);
 	font-weight: bold;
 	margin: auto;
