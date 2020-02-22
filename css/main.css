@@ -6,7 +6,7 @@
 	--sidebar-margin: auto;
 	--sidebar-padding: 10px;
 	/* Footer */
-	--footer-padding: 5px;
+	--footer-padding: 15px;
 }
 
 @font-face {
@@ -17,6 +17,7 @@
 html {
 	height: 100%;
 	width: 100%;
+  margin: 0;
 }
 
 body {
@@ -25,7 +26,8 @@ body {
 	background-color: rgb(84, 23, 23);
   font-family: "Roboto Slab", Serif;
   font-weight: bold;
-	margin: 0;
+  position: relative;
+  margin: 0;
 }
 
 .nav {
@@ -37,10 +39,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	color: white;
-	list-style-type: none;
-	display: flex;
-	flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 	justify-content: flex-end;
+  list-style-type: none;
+  padding: 0.35vh;
 }
 
 .nav a {
@@ -83,16 +86,16 @@ body {
 }
 
 .info-games-left {
+  background-color: black;
 	grid-column: col-start / span 3;
+  height: fit-content;
+  margin: 10px auto;
 }
 
 .info-games-list {
-	background-color: #000000;
 	display: block;
 	font-family: var(--postal-font);
 	font-style: bold;
-	margin: 10px auto;
-	padding: var(--sidebar-padding);
 	height: fit-content;
 }
 
@@ -100,7 +103,6 @@ body {
 	text-align: center;
 	list-style-type: none;
 	display: inherit;
-	margin: var(--sidebar-margin);
 	padding: var(--sidebar-padding);
 }
 
@@ -112,7 +114,6 @@ body {
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	text-align: center;
-	margin: 0;
 	padding: var(--sidebar-padding);
 }
 
@@ -123,7 +124,6 @@ body {
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	text-decoration: none;
-	margin: 0;
 	padding: var(--sidebar-padding);
 }
 
@@ -132,9 +132,6 @@ body {
 }
 
 .gallery {
-	color: red;
-	background-color: rgba(0, 0, 0, 1);
-	margin: 10px auto;
 	padding: var(--sidebar-padding);
 	text-align: center;
 	height: fit-content;
@@ -145,7 +142,7 @@ body {
 	color: #ffffff;
 	font-family: "Roboto Slab" Serif;
 	font-size: 14px;
-	font-weight: bold;
+	/* font-weight: bold; */
 	letter-spacing: 0.05em;
 	margin: 10px auto;
 	padding: 25px;
@@ -188,8 +185,8 @@ footer {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
+  margin: 0;
 	height: fit-content;
-	width: 100%;
 }
 
 footer div {
@@ -204,7 +201,7 @@ footer div {
 }
 
 .footer-top .footer-container:nth-child(odd) {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.4);
 }
 
 .footer-top .footer-container:nth-child(2) {
@@ -230,14 +227,14 @@ footer div {
 }
 
 .social-media a {
-	padding: 10px;
+	padding: 0 0.6rem;
 }
 
-.footer-container i {
+.social-media i {
 	background-color: rgba(255, 0, 0, 0.225);
-	border-radius: 100%;
+	border-radius: 10px;
 	color: red;
-	padding: 0.5rem;
+	padding: 0.4rem;
 }
 
 .copyrightName {
