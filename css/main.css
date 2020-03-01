@@ -1,5 +1,5 @@
 :root {
-	--info-games-list-border: 0.1vh solid #ffffff;
+	--main__list-border: 0.1vh solid #ffffff;
 	--postal-font: 'Special Elite';
 	--postal-font-color: rgb(175, 0, 0);
 	/* Sidebar */
@@ -17,7 +17,7 @@
 html {
 	height: 100%;
 	width: 100%;
-  margin: 0;
+  position: absolute;
 }
 
 body {
@@ -43,7 +43,6 @@ body {
   flex-flow: row nowrap;
 	justify-content: flex-end;
   list-style-type: none;
-  padding: 0.35vh;
 }
 
 .nav a {
@@ -76,37 +75,35 @@ body {
 }
 
 .main {
-	margin: 0 10px;
-}
-
-.info-games {
 	display: grid;
 	grid-template-columns: repeat(12, [col-start] 1fr);
 	grid-gap: 10px;
+  margin: 0 10px;
 }
 
-.info-games-left {
+.main__left {
   background-color: black;
 	grid-column: col-start / span 3;
   height: fit-content;
   margin: 10px auto;
+  width: 100%;
 }
 
-.info-games-list {
+.main__list {
 	display: block;
 	font-family: var(--postal-font);
 	font-style: bold;
 	height: fit-content;
 }
 
-.info-games-list ul {
+.main__list ul {
 	text-align: center;
 	list-style-type: none;
 	display: inherit;
 	padding: var(--sidebar-padding);
 }
 
-.info-games-list h1 {
+.main__list h1 {
 	display: inherit;
 	color: var(--postal-font-color);
 	font-family: inherit;
@@ -117,7 +114,7 @@ body {
 	padding: var(--sidebar-padding);
 }
 
-.info-games-list a {
+.main__list a {
 	display: inherit;
 	color: #ffffff;
 	font-family: inherit;
@@ -127,17 +124,18 @@ body {
 	padding: var(--sidebar-padding);
 }
 
-.info-games-list a:hover {
+.main__list a:hover {
 	color: rgb(162, 0, 0);
 }
 
-.gallery {
+.main__gallery {
+  color: red;
 	padding: var(--sidebar-padding);
 	text-align: center;
 	height: fit-content;
 }
 
-.info-text {
+.main__text {
 	background-color: rgba(0, 0, 0, 1);
 	color: #ffffff;
 	font-family: "Roboto Slab" Serif;
@@ -149,31 +147,29 @@ body {
 	grid-column: col-start 4 / col-end;
 }
 
-.info-text figure,
-figcaption {
+.main__text figure, figcaption {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
 }
 
-.info-text img {
+.main__text img {
 	height: 200px;
 	width: auto;
 }
 
-.gallery h1 {
+.main__gallery h1 {
 	color: var(--postal-font-color);
 	font-family: var(--postal-font);
 }
 
-.gallery img {
+.main__gallery img {
 	margin: auto;
 	height: 100px;
 }
 
-figure img,
-figcaption {
+figure img, figcaption {
 	margin: 10px 0;
 	font-family: var(--postal-font);
 	font-size: 20px;
@@ -185,59 +181,56 @@ footer {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-  margin: 0;
 	height: fit-content;
+  width: 100%;
 }
 
-footer div {
-	max-width: 25vw;
-}
-
-.footer-top {
+.footer__top {
 	color: rgba(255, 255, 255, 1);
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
 }
 
-.footer-top .footer-container:nth-child(odd) {
+.footer__container:nth-child(odd) {
 	color: rgba(255, 255, 255, 0.4);
 }
 
-.footer-top .footer-container:nth-child(2) {
+.footer__container:nth-child(2) {
 	text-align: center;
 }
 
-.footer-container {
+.footer__container {
 	text-align: justify;
 	text-justify: center;
+	max-width: 25vw;
 }
 
-.beg {
+.footer__text {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: bold;
 	padding: var(--footer-padding);
 }
 
-.social-media {
+.footer__social-media {
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
 	margin: auto;
 }
 
-.social-media a {
+.footer__social-media a {
 	padding: 0 0.6rem;
 }
 
-.social-media i {
+.footer__social-media i {
 	background-color: rgba(255, 0, 0, 0.225);
 	border-radius: 10px;
 	color: red;
 	padding: 0.4rem;
 }
 
-.copyrightName {
+.copyright-name {
 	color: rgba(255, 60, 60, 1);
 	font-family: monospace;
 	font-size: calc(10px + 0.2rem);
