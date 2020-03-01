@@ -1,242 +1,242 @@
 :root {
-  --main__list-border: 0.1vh solid #ffffff;
-  --postal-font: 'Special Elite';
-  --postal-font-color: rgb(175, 0, 0);
-  /* Sidebar */
-  --sidebar-margin: auto;
-  --sidebar-padding: 10px;
-  /* Footer */
-  --footer-padding: 15px;
+	--main__list-border: 0.1vh solid #ffffff;
+	--postal-font: 'Special Elite';
+	--postal-font-color: rgb(175, 0, 0);
+	/* Sidebar */
+	--sidebar-margin: auto;
+	--sidebar-padding: 10px;
+	/* Footer */
+	--footer-padding: 15px;
 }
 
 @font-face {
-  font-family: "Roboto Slab";
-  src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont:wght.ttf") format("truetype");
+	font-family: "Roboto Slab";
+	src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont:wght.ttf") format("truetype");
 }
 
 html {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(84, 23, 23);
-  font-family: "Roboto Slab", Serif;
-  font-weight: bold;
-  position: relative;
-  margin: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(84, 23, 23);
+	font-family: "Roboto Slab", Serif;
+	font-weight: bold;
+	position: relative;
+	margin: 0;
 }
 
 .nav {
-  height: 6vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 1);
-  background-image: url(../img/postal-hub-logo.ico);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  color: white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  list-style-type: none;
+	height: 6vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	background-image: url(../img/postal-hub-logo.ico);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	list-style-type: none;
 }
 
 .nav a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
-  margin: 2px;
-  padding: 10px;
-  text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+	font-family: "Roboto Slab", serif;
+	font-weight: bold;
+	margin: 2px;
+	padding: 10px;
+	text-decoration: none;
 }
 
 .nav a:hover {
-  background-color: #ffffff;
-  color: #000000;
+	background-color: #ffffff;
+	color: #000000;
 }
 
 .banner {
-  height: 40vh;
-  width: 100%;
-  display: flex;
-  margin: 10px 0 0 0;
+	height: 40vh;
+	width: 100%;
+	display: flex;
+	margin: 10px 0 0 0;
 }
 
 .banner img {
-  height: 100%;
-  margin: auto;
+	height: 100%;
+	margin: auto;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 10px;
-  margin: 0 10px;
+	display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+	grid-gap: 10px;
+	margin: 0 10px;
 }
 
 .main__left {
-  background-color: black;
-  grid-column: col-start / span 3;
-  height: fit-content;
-  margin: 10px auto;
-  width: 100%;
+	background-color: black;
+	grid-column: col-start / span 3;
+	height: fit-content;
+	margin: 10px auto;
+	width: 100%;
 }
 
 .main__list {
-  display: block;
-  font-family: var(--postal-font);
-  font-style: bold;
-  height: fit-content;
+	display: block;
+	font-family: var(--postal-font);
+	font-style: bold;
+	height: fit-content;
 }
 
 .main__list ul {
-  text-align: center;
-  list-style-type: none;
-  display: inherit;
-  padding: var(--sidebar-padding);
+	text-align: center;
+	list-style-type: none;
+	display: inherit;
+	padding: var(--sidebar-padding);
 }
 
 .main__list h1 {
-  display: inherit;
-  color: var(--postal-font-color);
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-align: center;
-  padding: var(--sidebar-padding);
+	display: inherit;
+	color: var(--postal-font-color);
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	text-align: center;
+	padding: var(--sidebar-padding);
 }
 
 .main__list a {
-  display: inherit;
-  color: #ffffff;
-  font-family: inherit;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  padding: var(--sidebar-padding);
+	display: inherit;
+	color: #ffffff;
+	font-family: inherit;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	padding: var(--sidebar-padding);
 }
 
 .main__list a:hover {
-  color: rgb(162, 0, 0);
+	color: rgb(162, 0, 0);
 }
 
 .main__gallery {
-  color: red;
-  padding: var(--sidebar-padding);
-  text-align: center;
-  height: fit-content;
+	color: red;
+	padding: var(--sidebar-padding);
+	text-align: center;
+	height: fit-content;
 }
 
 .main__text {
-  background-color: rgba(0, 0, 0, 1);
-  color: #ffffff;
-  font-family: "Roboto Slab" Serif;
-  font-size: 14px;
-  /* font-weight: bold; */
-  letter-spacing: 0.05em;
-  margin: 10px auto;
-  padding: 25px;
-  grid-column: col-start 4 / col-end;
+	background-color: rgba(0, 0, 0, 1);
+	color: #ffffff;
+	font-family: "Roboto Slab" Serif;
+	font-size: 14px;
+	/* font-weight: bold; */
+	letter-spacing: 0.05em;
+	margin: 10px auto;
+	padding: 25px;
+	grid-column: col-start 4 / col-end;
 }
 
 .main__text figure,
 figcaption {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .main__text img {
-  height: 200px;
-  width: auto;
+	height: 200px;
+	width: auto;
 }
 
 .main__gallery h1 {
-  color: var(--postal-font-color);
-  font-family: var(--postal-font);
+	color: var(--postal-font-color);
+	font-family: var(--postal-font);
 }
 
 .main__gallery img {
-  margin: auto;
-  height: 100px;
+	margin: auto;
+	height: 100px;
 }
 
 figure img,
 figcaption {
-  margin: 10px 0;
-  font-family: var(--postal-font);
-  font-size: 20px;
-  font-weight: bold;
+	margin: 10px 0;
+	font-family: var(--postal-font);
+	font-size: 20px;
+	font-weight: bold;
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 1);
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  height: fit-content;
-  width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	height: fit-content;
+	width: 100%;
 }
 
 .footer__top {
-  color: rgba(255, 255, 255, 1);
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
+	color: rgba(255, 255, 255, 1);
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
 }
 
 .footer__container:nth-child(odd) {
-  color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.4);
 }
 
 .footer__container:nth-child(2) {
-  text-align: center;
+	text-align: center;
 }
 
 .footer__container {
-  text-align: justify;
-  text-justify: center;
-  max-width: 25vw;
+	text-align: justify;
+	text-justify: center;
+	max-width: 25vw;
 }
 
 .footer__text {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-weight: bold;
-  padding: var(--footer-padding);
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	padding: var(--footer-padding);
 }
 
 .footer__social-media {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  margin: auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	margin: auto;
 }
 
 .footer__social-media a {
-  padding: 0 0.6rem;
+	padding: 0 0.6rem;
 }
 
 .footer__social-media i {
-  background-color: rgba(255, 0, 0, 0.225);
-  border-radius: 10px;
-  color: red;
-  padding: 0.4rem;
+	background-color: rgba(255, 0, 0, 0.225);
+	border-radius: 10px;
+	color: red;
+	padding: 0.4rem;
 }
 
 .copyright-name {
-  color: rgba(255, 60, 60, 1);
-  font-family: monospace;
-  font-size: calc(10px + 0.2rem);
-  font-weight: bold;
-  margin: auto;
-  padding: var(--footer-padding);
+	color: rgba(255, 60, 60, 1);
+	font-family: monospace;
+	font-size: calc(10px + 0.2rem);
+	font-weight: bold;
+	margin: auto;
+	padding: var(--footer-padding);
 }
