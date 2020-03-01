@@ -10,24 +10,24 @@
 }
 
 @font-face {
-  font-family: "Roboto Slab";
-  src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont:wght.ttf") format("truetype");
+	font-family: "Roboto Slab";
+	src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont:wght.ttf") format("truetype");
 }
 
 html {
 	height: 100%;
 	width: 100%;
-  position: absolute;
+	position: absolute;
 }
 
 body {
 	height: 100%;
 	width: 100%;
 	background-color: rgb(84, 23, 23);
-  font-family: "Roboto Slab", Serif;
-  font-weight: bold;
-  position: relative;
-  margin: 0;
+	font-family: "Roboto Slab", Serif;
+	font-weight: bold;
+	position: relative;
+	margin: 0;
 }
 
 .nav {
@@ -39,10 +39,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	color: white;
-  display: flex;
-  flex-flow: row nowrap;
+	display: flex;
+	flex-flow: row nowrap;
 	justify-content: flex-end;
-  list-style-type: none;
+	list-style-type: none;
 }
 
 .nav a {
@@ -78,15 +78,15 @@ body {
 	display: grid;
 	grid-template-columns: repeat(12, [col-start] 1fr);
 	grid-gap: 10px;
-  margin: 0 10px;
+	margin: 0 10px;
 }
 
 .main__left {
-  background-color: black;
+	background-color: black;
 	grid-column: col-start / span 3;
-  height: fit-content;
-  margin: 10px auto;
-  width: 100%;
+	height: fit-content;
+	margin: 10px auto;
+	width: 100%;
 }
 
 .main__list {
@@ -129,7 +129,7 @@ body {
 }
 
 .main__gallery {
-  color: red;
+	color: red;
 	padding: var(--sidebar-padding);
 	text-align: center;
 	height: fit-content;
@@ -147,7 +147,8 @@ body {
 	grid-column: col-start 4 / col-end;
 }
 
-.main__text figure, figcaption {
+.main__text figure,
+figcaption {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -169,7 +170,8 @@ body {
 	height: 100px;
 }
 
-figure img, figcaption {
+figure img,
+figcaption {
 	margin: 10px 0;
 	font-family: var(--postal-font);
 	font-size: 20px;
@@ -182,7 +184,7 @@ footer {
 	flex-flow: column;
 	justify-content: center;
 	height: fit-content;
-  width: 100%;
+	width: 100%;
 }
 
 .footer__top {
